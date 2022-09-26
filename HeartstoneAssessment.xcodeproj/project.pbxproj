@@ -26,6 +26,8 @@
 		50B573BD28E1B2D800618251 /* MainGridView+Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B573BC28E1B2D800618251 /* MainGridView+Cell.swift */; };
 		50B573C228E1B3CA00618251 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B573C128E1B3CA00618251 /* DetailView.swift */; };
 		50B573C428E1B3E100618251 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B573C328E1B3E100618251 /* DetailViewModel.swift */; };
+		50B573C628E1BEBE00618251 /* ParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B573C528E1BEBE00618251 /* ParserTests.swift */; };
+		50B573C828E1BFA000618251 /* MainGridView+ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B573C728E1BFA000618251 /* MainGridView+ErrorView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +71,8 @@
 		50B573BC28E1B2D800618251 /* MainGridView+Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainGridView+Cell.swift"; sourceTree = "<group>"; };
 		50B573C128E1B3CA00618251 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		50B573C328E1B3E100618251 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
+		50B573C528E1BEBE00618251 /* ParserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParserTests.swift; sourceTree = "<group>"; };
+		50B573C728E1BFA000618251 /* MainGridView+ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainGridView+ErrorView.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +148,7 @@
 			isa = PBXGroup;
 			children = (
 				50B5738828E0D09C00618251 /* HeartstoneAssessmentTests.swift */,
+				50B573C528E1BEBE00618251 /* ParserTests.swift */,
 			);
 			path = HeartstoneAssessmentTests;
 			sourceTree = "<group>";
@@ -191,6 +196,7 @@
 				50B573B228E1A7BC00618251 /* MainGridView.swift */,
 				50B573BA28E1B2CF00618251 /* MainGridView+List.swift */,
 				50B573BC28E1B2D800618251 /* MainGridView+Cell.swift */,
+				50B573C728E1BFA000618251 /* MainGridView+ErrorView.swift */,
 			);
 			path = MainGridView;
 			sourceTree = "<group>";
@@ -364,6 +370,7 @@
 				50B573BB28E1B2CF00618251 /* MainGridView+List.swift in Sources */,
 				50B573B128E1A68800618251 /* DataWorker.swift in Sources */,
 				50B573A628E0D60E00618251 /* CardsList.swift in Sources */,
+				50B573C828E1BFA000618251 /* MainGridView+ErrorView.swift in Sources */,
 				50B573A828E0D75200618251 /* Card.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -372,6 +379,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50B573C628E1BEBE00618251 /* ParserTests.swift in Sources */,
 				50B5738928E0D09C00618251 /* HeartstoneAssessmentTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -16,8 +16,16 @@ struct MainGridView: View {
     ]
     var body: some View {
         NavigationView {
-            listView
-                .navigationTitle("Heartstone cards")
+            ZStack {
+                listView
+                    .navigationTitle("Heartstone cards")
+                if viewmodel.showingLoader {
+                    ProgressView()
+                }
+                if let errorText = viewmodel.showingError {
+                    errorView(errorText)
+                }
+            }
         }
     }
 }

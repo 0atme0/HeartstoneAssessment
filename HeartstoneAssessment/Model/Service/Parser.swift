@@ -14,7 +14,7 @@ protocol ParserProtocol {
 }
 
 class Parser: ParserProtocol {
-    let decoder = JSONDecoder()
+    private let decoder = JSONDecoder()
     
     func getCardsList(_ data: Data, completion: @escaping (CardsListParserResult) -> ()) {
         DispatchQueue.global(priority: .background).async {
