@@ -22,6 +22,8 @@
 		50B573B128E1A68800618251 /* DataWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B573B028E1A68800618251 /* DataWorker.swift */; };
 		50B573B328E1A7BC00618251 /* MainGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B573B228E1A7BC00618251 /* MainGridView.swift */; };
 		50B573B528E1A7CC00618251 /* MainGridViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B573B428E1A7CC00618251 /* MainGridViewModel.swift */; };
+		50B573BB28E1B2CF00618251 /* MainGridView+List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B573BA28E1B2CF00618251 /* MainGridView+List.swift */; };
+		50B573BD28E1B2D800618251 /* MainGridView+Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B573BC28E1B2D800618251 /* MainGridView+Cell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +63,8 @@
 		50B573B228E1A7BC00618251 /* MainGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainGridView.swift; sourceTree = "<group>"; };
 		50B573B428E1A7CC00618251 /* MainGridViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainGridViewModel.swift; sourceTree = "<group>"; };
 		50B573B928E1B13800618251 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		50B573BA28E1B2CF00618251 /* MainGridView+List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainGridView+List.swift"; sourceTree = "<group>"; };
+		50B573BC28E1B2D800618251 /* MainGridView+Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainGridView+Cell.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,6 +185,8 @@
 			isa = PBXGroup;
 			children = (
 				50B573B228E1A7BC00618251 /* MainGridView.swift */,
+				50B573BA28E1B2CF00618251 /* MainGridView+List.swift */,
+				50B573BC28E1B2D800618251 /* MainGridView+Cell.swift */,
 			);
 			path = MainGridView;
 			sourceTree = "<group>";
@@ -338,6 +344,8 @@
 				50B573B528E1A7CC00618251 /* MainGridViewModel.swift in Sources */,
 				50B573B328E1A7BC00618251 /* MainGridView.swift in Sources */,
 				50B573AA28E0D76400618251 /* Mechanic.swift in Sources */,
+				50B573BD28E1B2D800618251 /* MainGridView+Cell.swift in Sources */,
+				50B573BB28E1B2CF00618251 /* MainGridView+List.swift in Sources */,
 				50B573B128E1A68800618251 /* DataWorker.swift in Sources */,
 				50B573A628E0D60E00618251 /* CardsList.swift in Sources */,
 				50B573A828E0D75200618251 /* Card.swift in Sources */,

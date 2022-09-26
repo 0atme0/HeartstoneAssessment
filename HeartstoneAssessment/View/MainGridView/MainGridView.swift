@@ -9,7 +9,7 @@ import SwiftUI
 
 struct MainGridView: View {
     @ObservedObject var viewmodel: MainGridViewModel
-    private let columns = [
+    internal let columns = [
         GridItem(.adaptive(minimum: 80)),
         GridItem(.adaptive(minimum: 80)),
         GridItem(.adaptive(minimum: 80))
@@ -34,7 +34,7 @@ struct MainGridView: View {
                 }
                 .padding(.horizontal)
             }
-            .navigationTitle("Hearstone cards")
+            .navigationTitle("Heartstone cards")
         }
     }
 }
