@@ -10,7 +10,6 @@
 		50B5737828E0D09A00618251 /* HeartstoneAssessmentApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B5737728E0D09A00618251 /* HeartstoneAssessmentApp.swift */; };
 		50B5737C28E0D09C00618251 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50B5737B28E0D09C00618251 /* Assets.xcassets */; };
 		50B5737F28E0D09C00618251 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50B5737E28E0D09C00618251 /* Preview Assets.xcassets */; };
-		50B5738928E0D09C00618251 /* HeartstoneAssessmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B5738828E0D09C00618251 /* HeartstoneAssessmentTests.swift */; };
 		50B5739328E0D09C00618251 /* HeartstoneAssessmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B5739228E0D09C00618251 /* HeartstoneAssessmentUITests.swift */; };
 		50B5739528E0D09C00618251 /* HeartstoneAssessmentUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B5739428E0D09C00618251 /* HeartstoneAssessmentUITestsLaunchTests.swift */; };
 		50B573A228E0D17200618251 /* cards.json in Resources */ = {isa = PBXBuildFile; fileRef = 50B573A128E0D17200618251 /* cards.json */; };
@@ -28,6 +27,9 @@
 		50B573C428E1B3E100618251 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B573C328E1B3E100618251 /* DetailViewModel.swift */; };
 		50B573C628E1BEBE00618251 /* ParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B573C528E1BEBE00618251 /* ParserTests.swift */; };
 		50B573C828E1BFA000618251 /* MainGridView+ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B573C728E1BFA000618251 /* MainGridView+ErrorView.swift */; };
+		50B573CA28E1C20700618251 /* DataWorkerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B573C928E1C20700618251 /* DataWorkerTests.swift */; };
+		50B573CC28E1C33400618251 /* cards_empty.json in Resources */ = {isa = PBXBuildFile; fileRef = 50B573CB28E1C33400618251 /* cards_empty.json */; };
+		50B573CF28E1C54700618251 /* MainGridViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B573CE28E1C54700618251 /* MainGridViewModelTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,7 +55,6 @@
 		50B5737B28E0D09C00618251 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		50B5737E28E0D09C00618251 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		50B5738428E0D09C00618251 /* HeartstoneAssessmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HeartstoneAssessmentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		50B5738828E0D09C00618251 /* HeartstoneAssessmentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartstoneAssessmentTests.swift; sourceTree = "<group>"; };
 		50B5738E28E0D09C00618251 /* HeartstoneAssessmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HeartstoneAssessmentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		50B5739228E0D09C00618251 /* HeartstoneAssessmentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartstoneAssessmentUITests.swift; sourceTree = "<group>"; };
 		50B5739428E0D09C00618251 /* HeartstoneAssessmentUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartstoneAssessmentUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -73,6 +74,9 @@
 		50B573C328E1B3E100618251 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
 		50B573C528E1BEBE00618251 /* ParserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParserTests.swift; sourceTree = "<group>"; };
 		50B573C728E1BFA000618251 /* MainGridView+ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainGridView+ErrorView.swift"; sourceTree = "<group>"; };
+		50B573C928E1C20700618251 /* DataWorkerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataWorkerTests.swift; sourceTree = "<group>"; };
+		50B573CB28E1C33400618251 /* cards_empty.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = cards_empty.json; sourceTree = "<group>"; };
+		50B573CE28E1C54700618251 /* MainGridViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainGridViewModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,8 +151,10 @@
 		50B5738728E0D09C00618251 /* HeartstoneAssessmentTests */ = {
 			isa = PBXGroup;
 			children = (
-				50B5738828E0D09C00618251 /* HeartstoneAssessmentTests.swift */,
+				50B573CD28E1C52D00618251 /* Mock */,
 				50B573C528E1BEBE00618251 /* ParserTests.swift */,
+				50B573C928E1C20700618251 /* DataWorkerTests.swift */,
+				50B573CE28E1C54700618251 /* MainGridViewModelTests.swift */,
 			);
 			path = HeartstoneAssessmentTests;
 			sourceTree = "<group>";
@@ -225,6 +231,14 @@
 				50B573C128E1B3CA00618251 /* DetailView.swift */,
 			);
 			path = DetailView;
+			sourceTree = "<group>";
+		};
+		50B573CD28E1C52D00618251 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				50B573CB28E1C33400618251 /* cards_empty.json */,
+			);
+			path = Mock;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -342,6 +356,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50B573CC28E1C33400618251 /* cards_empty.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -379,8 +394,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50B573CF28E1C54700618251 /* MainGridViewModelTests.swift in Sources */,
 				50B573C628E1BEBE00618251 /* ParserTests.swift in Sources */,
-				50B5738928E0D09C00618251 /* HeartstoneAssessmentTests.swift in Sources */,
+				50B573CA28E1C20700618251 /* DataWorkerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

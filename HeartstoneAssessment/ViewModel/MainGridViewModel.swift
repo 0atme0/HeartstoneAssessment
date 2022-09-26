@@ -14,21 +14,24 @@ class MainGridViewModel: ObservableObject {
     @Published var showingError: String?
     @Published var showingLoader: Bool = false
     @Published var datasource: [Card] = []
+    private let path = Bundle.main.path(forResource: "cards", ofType: "json")!
     
     init(worker: DataWorkerProtocol = DataWorker(), parser: ParserProtocol = Parser()) {
         self.worker = worker
         self.parser = parser
-        loadData()
+        loadData { datasource in
+            self.datasource = datasource
+        }
     }
     //MARK: Public methods
-    func loadData() {
+    func loadData(completion: @escaping ([Card])->()) {
         showingLoader = true
-        self.worker.getCardsList { result in
+        self.worker.getCardsListWithPath(path: path) { result in
             self.showingLoader = false
             switch result {
             case .success(let data):
                 self.parseData(data) { datasource in
-                    self.datasource = self.filterCards(datasource)
+                    completion(self.filterCards(datasource))
                 }
             case .failure(let error):
                 self.showingError = error.localizedDescription
