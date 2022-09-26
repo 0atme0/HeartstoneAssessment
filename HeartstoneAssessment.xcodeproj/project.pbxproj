@@ -20,6 +20,7 @@
 		50B573A828E0D75200618251 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B573A728E0D75200618251 /* Card.swift */; };
 		50B573AA28E0D76400618251 /* Mechanic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B573A928E0D76400618251 /* Mechanic.swift */; };
 		50B573AE28E1A52A00618251 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B573AD28E1A52A00618251 /* Parser.swift */; };
+		50B573B128E1A68800618251 /* DataWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B573B028E1A68800618251 /* DataWorker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		50B573A728E0D75200618251 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		50B573A928E0D76400618251 /* Mechanic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mechanic.swift; sourceTree = "<group>"; };
 		50B573AD28E1A52A00618251 /* Parser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
+		50B573B028E1A68800618251 /* DataWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataWorker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +147,7 @@
 		50B573AB28E0D77A00618251 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				50B573AF28E1A66C00618251 /* Service */,
 				50B573AC28E0D78000618251 /* Entity */,
 			);
 			path = Model;
@@ -156,9 +159,17 @@
 				50B573A528E0D60E00618251 /* CardsList.swift */,
 				50B573A728E0D75200618251 /* Card.swift */,
 				50B573A928E0D76400618251 /* Mechanic.swift */,
-				50B573AD28E1A52A00618251 /* Parser.swift */,
 			);
 			path = Entity;
+			sourceTree = "<group>";
+		};
+		50B573AF28E1A66C00618251 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				50B573AD28E1A52A00618251 /* Parser.swift */,
+				50B573B028E1A68800618251 /* DataWorker.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -297,6 +308,7 @@
 				50B5737828E0D09A00618251 /* HeartstoneAssessmentApp.swift in Sources */,
 				50B573AE28E1A52A00618251 /* Parser.swift in Sources */,
 				50B573AA28E0D76400618251 /* Mechanic.swift in Sources */,
+				50B573B128E1A68800618251 /* DataWorker.swift in Sources */,
 				50B573A628E0D60E00618251 /* CardsList.swift in Sources */,
 				50B573A828E0D75200618251 /* Card.swift in Sources */,
 			);

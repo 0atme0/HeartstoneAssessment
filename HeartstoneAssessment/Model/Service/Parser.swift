@@ -7,16 +7,16 @@
 
 import Foundation
 
-typealias CardsListResult = Result<CardsList, Error>
+typealias CardsListParserResult = Result<CardsList, Error>
 
 protocol ParserProtocol {
-    func getCardsList(_ data: Data) -> CardsListResult
+    func getCardsList(_ data: Data) -> CardsListParserResult
 }
 
 class Parser {
     let decoder = JSONDecoder()
 
-    func getCardsList(_ data: Data) -> CardsListResult {
+    func getCardsList(_ data: Data) -> CardsListParserResult {
         do {
             let result = try decoder.decode(CardsList.self, from: data)
             return .success(result)
