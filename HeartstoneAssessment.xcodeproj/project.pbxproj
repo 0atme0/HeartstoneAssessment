@@ -19,6 +19,7 @@
 		50B573A628E0D60E00618251 /* CardsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B573A528E0D60E00618251 /* CardsList.swift */; };
 		50B573A828E0D75200618251 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B573A728E0D75200618251 /* Card.swift */; };
 		50B573AA28E0D76400618251 /* Mechanic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B573A928E0D76400618251 /* Mechanic.swift */; };
+		50B573AE28E1A52A00618251 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B573AD28E1A52A00618251 /* Parser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		50B573A528E0D60E00618251 /* CardsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsList.swift; sourceTree = "<group>"; };
 		50B573A728E0D75200618251 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		50B573A928E0D76400618251 /* Mechanic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mechanic.swift; sourceTree = "<group>"; };
+		50B573AD28E1A52A00618251 /* Parser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,9 +112,7 @@
 				50B5737928E0D09A00618251 /* ContentView.swift */,
 				50B5737B28E0D09C00618251 /* Assets.xcassets */,
 				50B5737D28E0D09C00618251 /* Preview Content */,
-				50B573A528E0D60E00618251 /* CardsList.swift */,
-				50B573A728E0D75200618251 /* Card.swift */,
-				50B573A928E0D76400618251 /* Mechanic.swift */,
+				50B573AB28E0D77A00618251 /* Model */,
 			);
 			path = HeartstoneAssessment;
 			sourceTree = "<group>";
@@ -140,6 +140,25 @@
 				50B5739428E0D09C00618251 /* HeartstoneAssessmentUITestsLaunchTests.swift */,
 			);
 			path = HeartstoneAssessmentUITests;
+			sourceTree = "<group>";
+		};
+		50B573AB28E0D77A00618251 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				50B573AC28E0D78000618251 /* Entity */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		50B573AC28E0D78000618251 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				50B573A528E0D60E00618251 /* CardsList.swift */,
+				50B573A728E0D75200618251 /* Card.swift */,
+				50B573A928E0D76400618251 /* Mechanic.swift */,
+				50B573AD28E1A52A00618251 /* Parser.swift */,
+			);
+			path = Entity;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,6 +295,7 @@
 			files = (
 				50B5737A28E0D09A00618251 /* ContentView.swift in Sources */,
 				50B5737828E0D09A00618251 /* HeartstoneAssessmentApp.swift in Sources */,
+				50B573AE28E1A52A00618251 /* Parser.swift in Sources */,
 				50B573AA28E0D76400618251 /* Mechanic.swift in Sources */,
 				50B573A628E0D60E00618251 /* CardsList.swift in Sources */,
 				50B573A828E0D75200618251 /* Card.swift in Sources */,
