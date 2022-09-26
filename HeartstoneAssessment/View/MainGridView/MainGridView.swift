@@ -9,8 +9,33 @@ import SwiftUI
 
 struct MainGridView: View {
     @ObservedObject var viewmodel: MainGridViewModel
+    private let columns = [
+        GridItem(.adaptive(minimum: 80)),
+        GridItem(.adaptive(minimum: 80)),
+        GridItem(.adaptive(minimum: 80))
+    ]
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            ScrollView {
+                LazyVGrid(columns: columns, spacing: 20) {
+                    ForEach(viewmodel.datasource?.basic ?? [], id: \.self) { item in
+                        VStack {
+                            AsyncImage(url: URL(string: item.img ?? ""), scale: 2) { image in
+                                image
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fill)
+                            } placeholder: {
+                                ProgressView()
+                                    .progressViewStyle(.circular)
+                            }
+                            Text(item.cardID)
+                        }
+                    }
+                }
+                .padding(.horizontal)
+            }
+            .navigationTitle("Hearstone cards")
+        }
     }
 }
 

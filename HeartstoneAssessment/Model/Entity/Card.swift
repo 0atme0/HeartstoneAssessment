@@ -7,7 +7,13 @@
 
 import Foundation
 
-struct Card: Codable {
+struct Card: Codable, Hashable {
+    static func == (lhs: Card, rhs: Card) -> Bool {
+        lhs.cardID == rhs.cardID
+    }
+    var hashValue: Int {
+        return cardID.hashValue
+    }
     let cardID, name: String
     let cardSet: String
     let type: String

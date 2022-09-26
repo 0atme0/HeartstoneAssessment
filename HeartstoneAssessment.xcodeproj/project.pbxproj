@@ -60,6 +60,7 @@
 		50B573B028E1A68800618251 /* DataWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataWorker.swift; sourceTree = "<group>"; };
 		50B573B228E1A7BC00618251 /* MainGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainGridView.swift; sourceTree = "<group>"; };
 		50B573B428E1A7CC00618251 /* MainGridViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainGridViewModel.swift; sourceTree = "<group>"; };
+		50B573B928E1B13800618251 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +111,7 @@
 		50B5737628E0D09A00618251 /* HeartstoneAssessment */ = {
 			isa = PBXGroup;
 			children = (
+				50B573B928E1B13800618251 /* Info.plist */,
 				50B573A328E0D1F300618251 /* README.md */,
 				50B573A128E0D17200618251 /* cards.json */,
 				50B5737728E0D09A00618251 /* HeartstoneAssessmentApp.swift */,
@@ -500,6 +502,7 @@
 				DEVELOPMENT_TEAM = W7R6ZCLV57;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HeartstoneAssessment/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -529,6 +532,7 @@
 				DEVELOPMENT_TEAM = W7R6ZCLV57;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HeartstoneAssessment/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
