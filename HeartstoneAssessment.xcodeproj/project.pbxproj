@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		50B5737828E0D09A00618251 /* HeartstoneAssessmentApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B5737728E0D09A00618251 /* HeartstoneAssessmentApp.swift */; };
-		50B5737A28E0D09A00618251 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B5737928E0D09A00618251 /* ContentView.swift */; };
 		50B5737C28E0D09C00618251 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50B5737B28E0D09C00618251 /* Assets.xcassets */; };
 		50B5737F28E0D09C00618251 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50B5737E28E0D09C00618251 /* Preview Assets.xcassets */; };
 		50B5738928E0D09C00618251 /* HeartstoneAssessmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B5738828E0D09C00618251 /* HeartstoneAssessmentTests.swift */; };
@@ -21,6 +20,8 @@
 		50B573AA28E0D76400618251 /* Mechanic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B573A928E0D76400618251 /* Mechanic.swift */; };
 		50B573AE28E1A52A00618251 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B573AD28E1A52A00618251 /* Parser.swift */; };
 		50B573B128E1A68800618251 /* DataWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B573B028E1A68800618251 /* DataWorker.swift */; };
+		50B573B328E1A7BC00618251 /* MainGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B573B228E1A7BC00618251 /* MainGridView.swift */; };
+		50B573B528E1A7CC00618251 /* MainGridViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B573B428E1A7CC00618251 /* MainGridViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,7 +44,6 @@
 /* Begin PBXFileReference section */
 		50B5737428E0D09A00618251 /* HeartstoneAssessment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeartstoneAssessment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50B5737728E0D09A00618251 /* HeartstoneAssessmentApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartstoneAssessmentApp.swift; sourceTree = "<group>"; };
-		50B5737928E0D09A00618251 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		50B5737B28E0D09C00618251 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		50B5737E28E0D09C00618251 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		50B5738428E0D09C00618251 /* HeartstoneAssessmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HeartstoneAssessmentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -58,6 +58,8 @@
 		50B573A928E0D76400618251 /* Mechanic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mechanic.swift; sourceTree = "<group>"; };
 		50B573AD28E1A52A00618251 /* Parser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
 		50B573B028E1A68800618251 /* DataWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataWorker.swift; sourceTree = "<group>"; };
+		50B573B228E1A7BC00618251 /* MainGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainGridView.swift; sourceTree = "<group>"; };
+		50B573B428E1A7CC00618251 /* MainGridViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainGridViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,10 +113,11 @@
 				50B573A328E0D1F300618251 /* README.md */,
 				50B573A128E0D17200618251 /* cards.json */,
 				50B5737728E0D09A00618251 /* HeartstoneAssessmentApp.swift */,
-				50B5737928E0D09A00618251 /* ContentView.swift */,
 				50B5737B28E0D09C00618251 /* Assets.xcassets */,
 				50B5737D28E0D09C00618251 /* Preview Content */,
 				50B573AB28E0D77A00618251 /* Model */,
+				50B573B828E1A7ED00618251 /* ViewModel */,
+				50B573B728E1A7DA00618251 /* View */,
 			);
 			path = HeartstoneAssessment;
 			sourceTree = "<group>";
@@ -170,6 +173,30 @@
 				50B573B028E1A68800618251 /* DataWorker.swift */,
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		50B573B628E1A7D400618251 /* MainGridView */ = {
+			isa = PBXGroup;
+			children = (
+				50B573B228E1A7BC00618251 /* MainGridView.swift */,
+			);
+			path = MainGridView;
+			sourceTree = "<group>";
+		};
+		50B573B728E1A7DA00618251 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				50B573B628E1A7D400618251 /* MainGridView */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		50B573B828E1A7ED00618251 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				50B573B428E1A7CC00618251 /* MainGridViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -304,9 +331,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				50B5737A28E0D09A00618251 /* ContentView.swift in Sources */,
 				50B5737828E0D09A00618251 /* HeartstoneAssessmentApp.swift in Sources */,
 				50B573AE28E1A52A00618251 /* Parser.swift in Sources */,
+				50B573B528E1A7CC00618251 /* MainGridViewModel.swift in Sources */,
+				50B573B328E1A7BC00618251 /* MainGridView.swift in Sources */,
 				50B573AA28E0D76400618251 /* Mechanic.swift in Sources */,
 				50B573B128E1A68800618251 /* DataWorker.swift in Sources */,
 				50B573A628E0D60E00618251 /* CardsList.swift in Sources */,

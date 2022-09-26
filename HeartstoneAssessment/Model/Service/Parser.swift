@@ -13,7 +13,7 @@ protocol ParserProtocol {
     func getCardsList(_ data: Data) -> CardsListParserResult
 }
 
-class Parser {
+class Parser: ParserProtocol {
     let decoder = JSONDecoder()
 
     func getCardsList(_ data: Data) -> CardsListParserResult {

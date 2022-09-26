@@ -11,7 +11,7 @@ import SwiftUI
 struct HeartstoneAssessmentApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainGridView(viewmodel: MainGridViewModel())
         }
     }
 }
