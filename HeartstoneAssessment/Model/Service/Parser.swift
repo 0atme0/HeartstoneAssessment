@@ -10,18 +10,24 @@ import Foundation
 typealias CardsListParserResult = Result<CardsList, Error>
 
 protocol ParserProtocol {
-    func getCardsList(_ data: Data) -> CardsListParserResult
+    func getCardsList(_ data: Data, completion: @escaping (CardsListParserResult) -> ())
 }
 
 class Parser: ParserProtocol {
     let decoder = JSONDecoder()
-
-    func getCardsList(_ data: Data) -> CardsListParserResult {
-        do {
-            let result = try decoder.decode(CardsList.self, from: data)
-            return .success(result)
-        } catch {
-            return .failure(error)
+    
+    func getCardsList(_ data: Data, completion: @escaping (CardsListParserResult) -> ()) {
+        DispatchQueue.global(priority: .background).async {
+            do {
+                let result = try self.decoder.decode(CardsList.self, from: data)
+                DispatchQueue.main.async {
+                    completion(.success(result))
+                }
+            } catch {
+                DispatchQueue.main.async {
+                    completion(.failure(error))
+                }
+            }
         }
     }
 }
