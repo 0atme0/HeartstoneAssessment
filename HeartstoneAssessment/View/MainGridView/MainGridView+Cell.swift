@@ -21,8 +21,8 @@ extension MainGridView {
                             .resizable()
                             .aspectRatio(contentMode: .fill)
                     }
-                    Text(item.cardID)
-                        .font(.caption)
+                        Text(item.cardID)
+                            .font(.caption)
             }
         }
     }

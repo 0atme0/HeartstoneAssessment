@@ -24,6 +24,20 @@ struct DetailView: View {
                         .aspectRatio(contentMode: .fill)
                 }
                 .padding(.bottom)
+                HStack {
+                    Image(systemName: viewmodel.isFavorite(viewmodel.card) ? "star.fill" : "star")
+                        .foregroundColor(.orange)
+                    Text(viewmodel.isFavorite(viewmodel.card) ? "Unmark as favourite" : "Mark as favourite")
+                }
+                .padding()
+                .background{
+                    Capsule()
+                    .stroke(lineWidth: 1)}
+                .contentShape(Capsule())
+                .onTapGesture {
+                    viewmodel.tapOnFavorite(viewmodel.card)
+                }
+                .padding()
                 Text("Card ID: \(viewmodel.card.cardID)")
                     .padding(.horizontal)
                 Text("Card Name: \(viewmodel.card.name)")

@@ -19,10 +19,9 @@ class MainGridViewModel: ObservableObject {
     init(worker: DataWorkerProtocol = DataWorker(), parser: ParserProtocol = Parser()) {
         self.worker = worker
         self.parser = parser
-        loadData { datasource in
-            self.datasource = datasource
-        }
+        updateList()
     }
+    
     //MARK: Public methods
     func loadData(completion: @escaping ([Card])->()) {
         showingLoader = true
@@ -38,7 +37,13 @@ class MainGridViewModel: ObservableObject {
             }
         }
     }
+    
     //MARK: Private methods
+    func updateList() {
+        loadData { datasource in
+            self.datasource = datasource
+        }
+    }
     func parseData(_ data: Data, completion: @escaping (CardsList?) -> ()) {
         showingLoader = true
         parser.getCardsList(data) { result in
