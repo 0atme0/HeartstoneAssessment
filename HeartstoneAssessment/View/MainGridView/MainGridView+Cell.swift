@@ -11,16 +11,17 @@ extension MainGridView {
     struct CellView: View {
         @State var item : Card
         var body: some View {
-            VStack {
-                AsyncImage(url: URL(string: item.img ?? ""), scale: 2) { image in
-                    image
-                        .resizable()
-                        .aspectRatio(contentMode: .fill)
-                } placeholder: {
-                    ProgressView()
-                        .progressViewStyle(.circular)
-                }
-                Text(item.cardID)
+                VStack {
+                    AsyncImage(url: URL(string: item.img ?? ""), scale: 2) { image in
+                        image
+                            .resizable()
+                            .aspectRatio(contentMode: .fill)
+                    } placeholder: {
+                        Image("emptyCard")
+                            .resizable()
+                            .aspectRatio(contentMode: .fill)
+                    }
+                    Text(item.cardID)
             }
         }
     }

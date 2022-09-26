@@ -24,6 +24,8 @@
 		50B573B528E1A7CC00618251 /* MainGridViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B573B428E1A7CC00618251 /* MainGridViewModel.swift */; };
 		50B573BB28E1B2CF00618251 /* MainGridView+List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B573BA28E1B2CF00618251 /* MainGridView+List.swift */; };
 		50B573BD28E1B2D800618251 /* MainGridView+Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B573BC28E1B2D800618251 /* MainGridView+Cell.swift */; };
+		50B573C228E1B3CA00618251 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B573C128E1B3CA00618251 /* DetailView.swift */; };
+		50B573C428E1B3E100618251 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B573C328E1B3E100618251 /* DetailViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +67,8 @@
 		50B573B928E1B13800618251 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		50B573BA28E1B2CF00618251 /* MainGridView+List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainGridView+List.swift"; sourceTree = "<group>"; };
 		50B573BC28E1B2D800618251 /* MainGridView+Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainGridView+Cell.swift"; sourceTree = "<group>"; };
+		50B573C128E1B3CA00618251 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		50B573C328E1B3E100618251 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -195,6 +199,7 @@
 			isa = PBXGroup;
 			children = (
 				50B573B628E1A7D400618251 /* MainGridView */,
+				50B573C028E1B3B400618251 /* DetailView */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -203,8 +208,17 @@
 			isa = PBXGroup;
 			children = (
 				50B573B428E1A7CC00618251 /* MainGridViewModel.swift */,
+				50B573C328E1B3E100618251 /* DetailViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		50B573C028E1B3B400618251 /* DetailView */ = {
+			isa = PBXGroup;
+			children = (
+				50B573C128E1B3CA00618251 /* DetailView.swift */,
+			);
+			path = DetailView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -344,7 +358,9 @@
 				50B573B528E1A7CC00618251 /* MainGridViewModel.swift in Sources */,
 				50B573B328E1A7BC00618251 /* MainGridView.swift in Sources */,
 				50B573AA28E0D76400618251 /* Mechanic.swift in Sources */,
+				50B573C228E1B3CA00618251 /* DetailView.swift in Sources */,
 				50B573BD28E1B2D800618251 /* MainGridView+Cell.swift in Sources */,
+				50B573C428E1B3E100618251 /* DetailViewModel.swift in Sources */,
 				50B573BB28E1B2CF00618251 /* MainGridView+List.swift in Sources */,
 				50B573B128E1A68800618251 /* DataWorker.swift in Sources */,
 				50B573A628E0D60E00618251 /* CardsList.swift in Sources */,

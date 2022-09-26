@@ -16,25 +16,8 @@ struct MainGridView: View {
     ]
     var body: some View {
         NavigationView {
-            ScrollView {
-                LazyVGrid(columns: columns, spacing: 20) {
-                    ForEach(viewmodel.datasource?.basic ?? [], id: \.self) { item in
-                        VStack {
-                            AsyncImage(url: URL(string: item.img ?? ""), scale: 2) { image in
-                                image
-                                    .resizable()
-                                    .aspectRatio(contentMode: .fill)
-                            } placeholder: {
-                                ProgressView()
-                                    .progressViewStyle(.circular)
-                            }
-                            Text(item.cardID)
-                        }
-                    }
-                }
-                .padding(.horizontal)
-            }
-            .navigationTitle("Heartstone cards")
+            listView
+                .navigationTitle("Heartstone cards")
         }
     }
 }

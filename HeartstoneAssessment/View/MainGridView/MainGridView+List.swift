@@ -12,7 +12,9 @@ extension MainGridView {
         ScrollView {
             LazyVGrid(columns: columns, spacing: 20) {
                 ForEach(viewmodel.datasource?.basic ?? [], id: \.self) { item in
-                    CellView(item: item)
+                    NavigationLink(destination: DetailView(viewmodel: DetailViewModel(item))) {
+                        CellView(item: item)
+                    }
                 }
             }
             .padding(.horizontal)
