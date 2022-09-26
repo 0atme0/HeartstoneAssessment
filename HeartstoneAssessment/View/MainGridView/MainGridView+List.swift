@@ -11,7 +11,7 @@ extension MainGridView {
     var listView: some View {
         ScrollView {
             LazyVGrid(columns: columns, spacing: 20) {
-                ForEach(viewmodel.datasource?.basic ?? [], id: \.self) { item in
+                ForEach(viewmodel.datasource, id: \.self) { item in
                     NavigationLink(destination: DetailView(viewmodel: DetailViewModel(item))) {
                         CellView(item: item)
                     }

@@ -8,16 +8,43 @@
 import Foundation
 
 struct CardsList: Codable {
-    let basic, classic: [Card]
+    let basic: [Card]
+    let classic: [Card]
     let promo: [Card]
-    let hallOfFame, naxxramas, goblinsVsGnomes, blackrockMountain: [Card]
-    let theGrandTournament, theLeagueOfExplorers, whispersOfTheOldGods, oneNightInKarazhan: [Card]
+    let hallOfFame: [Card]
+    let naxxramas: [Card]
+    let goblinsVsGnomes: [Card]
+    let blackrockMountain: [Card]
+    let theGrandTournament: [Card]
+    let theLeagueOfExplorers: [Card]
+    let whispersOfTheOldGods: [Card]
+    let oneNightInKarazhan: [Card]
     let meanStreetsOfGadgetzan: [Card]
     let journeyToUnGoro: [Card]
     let tavernBrawl: [Card]
     let heroSkins: [Card]
     let missions: [Card]
     let credits: [Card]
+    
+    var flatArray: [Card] {
+        basic +
+        classic +
+        promo +
+        hallOfFame +
+        naxxramas +
+        goblinsVsGnomes +
+        blackrockMountain +
+        theGrandTournament +
+        theLeagueOfExplorers +
+        whispersOfTheOldGods +
+        oneNightInKarazhan +
+        meanStreetsOfGadgetzan +
+        journeyToUnGoro +
+        tavernBrawl +
+        heroSkins +
+        missions +
+        credits
+    }
     
     enum CodingKeys: String, CodingKey {
         case basic = "Basic"

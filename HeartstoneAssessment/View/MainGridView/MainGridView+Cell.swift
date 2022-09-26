@@ -22,6 +22,7 @@ extension MainGridView {
                             .aspectRatio(contentMode: .fill)
                     }
                     Text(item.cardID)
+                        .font(.caption)
             }
         }
     }

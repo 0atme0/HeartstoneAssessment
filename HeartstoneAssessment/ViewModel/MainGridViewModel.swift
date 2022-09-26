@@ -13,7 +13,7 @@ class MainGridViewModel: ObservableObject {
     private var parser: ParserProtocol
     @Published var showingError: String?
     @Published var showingLoader: Bool = false
-    @Published var datasource: CardsList?
+    @Published var datasource: [Card] = []
     
     init(worker: DataWorkerProtocol = DataWorker(), parser: ParserProtocol = Parser()) {
         self.worker = worker
@@ -28,7 +28,7 @@ class MainGridViewModel: ObservableObject {
             switch result {
             case .success(let data):
                 self.parseData(data) { datasource in
-                    self.datasource = datasource
+                    self.datasource = self.filterCards(datasource)
                 }
             case .failure(let error):
                 self.showingError = error.localizedDescription
@@ -48,5 +48,9 @@ class MainGridViewModel: ObservableObject {
                 completion(nil)
             }
         }
+    }
+    //Filter cards as it was mentioned in assessment: Hsiao is especially interested in the app showing Legendary cards with the Deathrattle Mechanic
+    func filterCards(_ datasource: CardsList?) -> [Card] {
+        datasource?.flatArray.filter{$0.rarity == "Legendary" && ($0.mechanics?.map{$0.name}.contains("Deathrattle") ?? false)} ?? []
     }
 }
